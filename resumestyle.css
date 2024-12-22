@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: linear-gradient(135deg, #75e6da, #05445e);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 900px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section */
+.left {
+  flex: 1;
+  padding: 20px;
+  background-color: #e8f5e9; /* Light green background */
+  border-radius: 10px;
+}
+
+.profiletext {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profiletext h2 {
+  color: #4caf50; /* Green title */
+}
+
+.profiletext span {
+  display: block;
+  font-size: 1em;
+  color: #757575; /* Gray */
+}
+
+.contactInfo {
+  margin-bottom: 20px;
+}
+
+.contactInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contactInfo li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contactInfo .icon {
+  margin-right: 10px;
+  color: #4caf50; /* Green icon */
+}
+
+/* Right Section */
+.right {
+  flex: 2;
+  padding: 20px;
+}
+
+h3.title,
+h2.title2 {
+  margin-bottom: 10px;
+  color: #4caf50; /* Green title */
+}
+
+.about {
+  margin-bottom: 20px;
+}
+
+.about ul {
+  list-style: none;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+}
+
+.about p {
+  margin-bottom: 10px;
+}
+
+/* Skills and Languages */
+.skills ul,
+.language ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li,
+.language li {
+  margin-bottom: 10px;
+}
+
+.percent {
+  background-color: #ddd;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.percent div {
+  height: 100%;
+  background-color: #2196f3; /* Blue */
+  border-radius: 3px;
+}
+
+/* Interests Section */
+.interest ul {
+  list-style: none;
+  padding: 0;
+}
+
+.interest ul li {
+  margin-bottom: 10px;
+}
