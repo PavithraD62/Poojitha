@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compact CV</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5d6ba; /* Peach */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1100px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border: 2px solid #f4a261; /* Soft orange */
+    height: 90vh;
+  }
+
+  /* Left Section */
+  .left {
+    background-color: #e76f51; /* Warm red */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 2px solid #f4a261;
+  }
+
+  .profiletext h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .profiletext span {
+    font-size: 1em;
+    font-style: italic;
+    color: #fde8e8; /* Pale red */
+  }
+
+  .contactInfo, .language {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contactInfo ul, .language ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .contactInfo li, .language li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .contactInfo .icon {
+    margin-right: 10px;
+  }
+
+  .contactInfo .icon i {
+    font-size: 1.2em;
+  }
+
+  .language .percent {
+    background-color: #fde8e8;
+    height: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+
+  .language .percent div {
+    height: 100%;
+    background-color: white;
+  }
+
+  /* Right Section */
+  .right {
+    padding: 20px;
+    overflow-y: auto;
+    color: #333;
+  }
+
+  h2.title2 {
+    color: #e76f51;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f4a261;
+    display: inline-block;
+  }
+
+  .about, .skills, .interest {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 5px;
+  }
+
+  /* Compact Skills Section */
+  .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .skills ul li {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  /* Compact Projects Section */
+  .about ul li {
+    margin-bottom: 8px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* Stack sections vertically on small screens */
+      height: auto;
+    }
+    .left, .right {
+      padding: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Left Section -->
+  <div class="left">
+    <div class="profiletext">
+      <h2>Poojitha R<br><span>Student</span></h2>
+    </div>
+    <div class="contactInfo">
+      <h3>Contact Information</h3>
+      <ul>
+        <li><span class="icon"><i class="fa fa-phone"></i></span><span>+91 9535143456</span></li>
+        <li><span class="icon"><i class="fa fa-envelope"></i></span><span>poojitha10@gmail.com</span></li>
+        <li><span class="icon"><i class="fa fa-linkedin"></i></span><span>www.poojitha@linkedin.com</span></li>
+        <li><span class="icon"><i class="fa fa-map-marker"></i></span><span>Bengaluru, Karnataka, India</span></li>
+      </ul>
+    </div>
+    <div class="language">
+      <h3>Languages</h3>
+      <ul>
+        <li>Kannada <div class="percent"><div style="width: 99%;"></div></div></li>
+        <li>English <div class="percent"><div style="width: 95%;"></div></div></li>
+        <li>Hindi <div class="percent"><div style="width: 70%;"></div></div></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Right Section -->
+  <div class="right">
+    <div class="about">
+      <h2 class="title2">Professional Summary</h2>
+      <p>Seeking a full-time position to apply my strong interpersonal skills, time management, and problem-solving abilities in a professional setting. Proficient in front-end and back-end development, database design, SQL, and implementing REST APIs.</p>
+    </div>
+    <div class="about">
+      <h2 class="title2">Projects</h2>
+      <ul>
+        <li><strong>Art Gallery Management System:</strong> Mini project on DBMS</li>
+        <li><strong>Flight Booking System:</strong> UI/UX design model</li>
+        <li><strong>Face Spoofing Detection:</strong> Mini project model</li>
+      </ul>
+    </div>
+    <div class="skills">
+      <h2 class="title2">Skills</h2>
+      <ul>
+        <li>Python - 95%</li>
+        <li>HTML - 85%</li>
+        <li>C - 90%</li>
+        <li>Java - 65%</li>
+      </ul>
+    </div>
+    <div class="interest">
+      <h2 class="title2">Interests</h2>
+      <ul>
+        <li>Novel Reading</li>
+        <li>Acting</li>
+        <li>Cooking</li>
+        <li>Writing</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
